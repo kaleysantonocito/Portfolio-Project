@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-color: #FAF5EF;
+    color: #A97782;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation styles */
+
+.logo {
+    font-size: 32px;
+    color: #A97782;
+    font-style: italic;
+}
+
+.logo:hover {
+    color: #8B5E6D;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 4%;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #60463C;
+}
+
+nav a:hover {
+    color: #A97782;
+}
+
+/* Homepage styles */
+
+main {
+    padding: 60px 4%;
+}
+
+h1 {
+    font-size: 65px;
+    color: #60463C;
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: #A97782;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+main p{
+    max-width: 450px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Explore My Work button styles */
+
+main a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #A97782;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+main a:hover {
+    background-color: #8B5E6D;
+}
