@@ -1,84 +1,127 @@
+/*
+    COLOR PALETTE
+
+    Main Pink:    #F7B8D1  - Main website background
+    Light Pink:   #FFF1F6  - Section backgrounds
+    Card Pink:    #F8D5E3  - Skills and project cards
+    Accent Pink:  #AC4779  - Buttons, links, and accents
+    Dark Plum:    #512D40  - Headings and body text
+    Soft White:   #FFF8FB  - Navigation bar and light cards
+*/
+
 body {
     margin: 0;
-    background-color: #FAF5EF;
-    color: #A97782;
-    font-family: 'Playfair Display', serif;
+    background-color: #F7B8D1;
+    color: #512D40;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 25px;
+    margin: auto;
 }
 
-/* Navigation styles */
+/* Header */
 
-.logo {
-    font-size: 32px;
-    color: #A97782;
-    font-style: italic;
-}
-
-.logo:hover {
-    color: #8B5E6D;
-}
-
-nav {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 4%;
 }
 
-nav ul {
+nav {
+    background-color: #FFF8FB;
     display: flex;
-    gap: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    gap: 25px;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #60463C;
+    color: #512D40;
 }
 
-nav a:hover {
-    color: #A97782;
+
+/* Main */
+
+/* intro section */
+
+.intro {
+    background-color: #F7B8D1;
+    margin-bottom: 20px;
 }
 
-/* Homepage styles */
-
-main {
-    padding: 60px 4%;
+.intro h4 {
+    color: #AC4779;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
-h1 {
-    font-size: 65px;
-    color: #60463C;
-    margin-bottom: 15px;
+.intro h1 {
+    color: #512D40;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
-h1 span {
-    color: #A97782;
-    font-style: italic;
+.intro p {
+    color: #512D40;
+    margin-top: 0px;
 }
 
-h2 {
-    font-size: 24px;
+.intro-buttons {
+    display: flex;
+    gap: 15px;
 }
 
-main p{
-    max-width: 450px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-}
-
-/* Explore My Work button styles */
-
-main a {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #A97782;
-    color: white;
+.project-button {
     text-decoration: none;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #AC4779;
+    color:#FFF8FB;
 }
 
-main a:hover {
-    background-color: #8B5E6D;
+.about-button {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #FFF8FB;
+    color:#AC4779;
+}
+
+/* Skills and tools */
+
+.skills-tools {
+    background-color: #FFF8FB;
+    padding: 5px;
+}
+
+.skills-tools h1 {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-cards {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fed8e6;
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 10px);
+}
+
+.skill-cards h2 {
+    font-size: 18px;
+}
+
+.skill-cards p {
+    font-size: 15px;
+    color:#512D40;
 }
