@@ -40,6 +40,10 @@ nav a {
     color: #512D40;
 }
 
+nav a.active {
+    color: #AC4779;
+    font-weight: bold;
+}
 
 
 /* Main */
