@@ -51,7 +51,7 @@ nav a.active {
 /* intro section */
 
 .intro {
-    background-color: #F7B8D1;
+    background-color: #F5C2D3;
     margin-bottom: 20px;
 }
 
@@ -112,6 +112,15 @@ nav a.active {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    position: relative;
+}
+
+.skills-cat {
+    position: absolute;
+    width: 150px;
+
+    top: -41px;
+    right:50px;
 }
 
 .skill-cards {
@@ -183,6 +192,16 @@ footer {
 
     max-width: 750px;
     margin: 0 auto;
+
+    position: relative;
+}
+
+.contact-cat {
+    position: absolute;
+    width: 150px;
+
+    top: -60px;
+    right: 40px;
 }
 
 .contact-card {
