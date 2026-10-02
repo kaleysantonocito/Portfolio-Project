@@ -12,8 +12,8 @@
 body {
     margin: 0;
     background-color: #F7B8D1;
-    color: #512D40;
-    font-family: 'Poppins', sans-serif;
+    color: #AC4779;
+    font-family: 'Popping', sans-serif;
     padding: 10px 25px;
     margin: auto;
 }
@@ -41,6 +41,7 @@ nav a {
 }
 
 
+
 /* Main */
 
 /* intro section */
@@ -52,7 +53,7 @@ nav a {
 
 .intro h4 {
     color: #AC4779;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 15px;
 }
@@ -138,6 +139,7 @@ nav a {
 
 footer {
     text-align: center;
+    padding: 5px;
 }
 
 .contact-button {
