@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    background-color: #F7B8D1;
+    background-color: #F5C2D3;
     color: #AC4779;
     font-family: 'Popping', sans-serif;
     padding: 10px 25px;
@@ -160,12 +160,68 @@ footer {
     text-align: center;
 }
 
+.contact-intro {
+    margin-bottom: 40px;
+
+}
+
+.contact-intro h4 {
+    color:#AC4779;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.contact-intro h1{
+    color:#512D40;
+    margin: 0px;
+    font-size: 40px;
+}
 .contact-container {
-    display: flex;
+    background-color: #FFF8FA;
+    border-radius: 30px;
+    padding: 15px;
+
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #F5C2D3;
+    border-radius: 20px;
+    padding: 18px 25px;
+    margin: 15px;
+    text-align: left;
+}
 
+.contact-card img {
+    width:40px;
+    height: 40px;
+}
+
+.contact-text h2{
+    font-size: 18px;
+    color: #512D40;
+    margin: 0;
+}
+
+.contact-text h3 {
+    font-size: 15px;
+    color: #AC4779;
+    margin: 5px 0px;
+    font-weight: normal;
+}
+
+.contact-text a {
+    color: #AC4779;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
 }
 
 
