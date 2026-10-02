@@ -147,3 +147,19 @@ footer {
     background-color: #AC4779;
     color:#FFF8FB;
 }
+
+/*Contact page*/
+
+.contact-main {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-card {
+
+}
+
+
