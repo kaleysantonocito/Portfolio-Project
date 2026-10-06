@@ -13,7 +13,7 @@ body {
     margin: 0;
     background-color: #F5C2D3;
     color: #AC4779;
-    font-family: 'Popping', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 10px 25px;
     margin: auto;
 }
@@ -279,4 +279,12 @@ footer {
 .coursework {
     background-color: #F5C2D3;
     border-radius: 30px;
+}
+
+
+/* Projects Page */
+
+.projects {
+    margin: 20px 0;
+    text-align: center;
 }
