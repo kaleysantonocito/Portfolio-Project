@@ -9,6 +9,10 @@
     Soft White:   #FFF8FB  - Navigation bar and light cards
 */
 
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
 body {
     margin: 0;
     background-color: #F5C2D3;
@@ -45,6 +49,30 @@ nav a.active {
     font-weight: bold;
 }
 
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #AC4779;
+    font-size: 36px;
+    margin: 0;
+}
+
+header nav {
+    background-color: #FFF8FB;
+    display: flex;
+    padding: 15px;
+    border-radius: 50px;
+    gap: 25px;
+}
+
+header nav a {
+    color: #512D40;
+    text-decoration: none;
+}
+
+header nav a.active {
+    color: #AC4779;
+    font-weight: bold;
+}
 
 /* Main */
 
@@ -94,6 +122,7 @@ nav a.active {
     background-color: #FFF8FB;
     color:#AC4779;
 }
+
 
 /* Skills and tools */
 
@@ -421,6 +450,176 @@ footer {
 /* Projects Page */
 
 .projects {
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.projects > h1 {
+    color: #AC4779;
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
+    margin-bottom: 25px;
+}
+
+#project-accordion {
+    --bs-accordion-bg: #FFF8FA;
+    --bs-accordion-btn-bg: #FFF8FA;
+    --bs-accordion-active-bg: #FFF8FA;
+    --bs-accordion-btn-color: #512D40;
+    --bs-accordion-active-color: #512D40;
+    --bs-accordion-border-color: #E8A9C3;
+    --bs-accordion-btn-focus-box-shadow: none;
+
+    border: 1px solid #E8A9C3;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#project-accordion .accordion-item {
+    background-color: #FFF8FA;
+    border: none;
+    border-bottom: 1px solid #E8A9C3;
+    border-radius: 0;
+    margin: 0;
+}
+
+#project-accordion .accordion-item:last-child {
+    border-bottom: none;
+}
+
+#project-accordion .accordion-button,
+#project-accordion .accordion-button:not(.collapsed) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    background-color: #FFF8FA;
+    color: #512D40;
+    padding: 20px 25px;
+
+    font-family: 'Poppins', sans-serif;
+    box-shadow: none;
+}
+
+#project-accordion .accordion-button::after {
+    position: absolute;
+    right: 20px;
+}
+
+
+
+#project-accordion .project-heading {
+    text-align: center;
+}
+
+#project-accordion .project-heading h2 {
+    color: #512D40;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+#project-accordion .project-heading p {
+    color: #AC4779;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#project-accordion .accordion-body {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+
+    background-color: #FFF8FA;
+    padding: 25px;
+    text-align: left;
+}
+
+#project-accordion .accordion-left {
+    flex: 1;
+    min-width: 0;
+}
+
+#project-accordion .accordion-left img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border: 1px solid #E8A9C3;
+    border-radius: 12px;
+}
+
+#project-accordion .accordion-right {
+    flex: 1.5;
+    min-width: 0;
+    text-align: left;
+}
+
+#project-accordion .accordion-right p {
+    color: #512D40;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+#project-accordion .accordion-right > p:first-child {
+    margin-top: 0;
+}
+
+#project-accordion .accordion-right h3 {
+    color: #AC4779;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0 8px;
+}
+
+#project-accordion .accordion-right hr {
+    border: none;
+    border-top: 1px solid #E8A9C3;
+    opacity: 1;
+    margin: 18px 0;
+}
+
+#project-accordion .accordion-right ul {
+    color: #512D40;
+    font-size: 15px;
+    line-height: 1.8;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+
+#project-accordion .accordion-right a {
+    display: inline-block;
+    background-color: #AC4779;
+    color: #FFF8FB;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 10px 18px;
+    border-radius: 50px;
+}
+
+#project-accordion .accordion-right a:hover {
+    background-color: #512D40;
+}
+
+
+@media (max-width: 768px) {
+    #project-accordion .accordion-body {
+        flex-direction: column;
+    }
+
+    #project-accordion .accordion-left,
+    #project-accordion .accordion-right {
+        width: 100%;
+    }
+
+    #project-accordion .project-heading h2 {
+        font-size: 17px;
+    }
 }
