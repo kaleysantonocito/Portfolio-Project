@@ -282,8 +282,8 @@ footer {
 .education-container {
     background-color:#FFF8FA;
     border-radius: 30px;
-    padding: 15px;
-    max-width: 750px;
+    padding: 25px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -298,19 +298,20 @@ footer {
     gap: 25px;
     align-items: stretch;
 }
+.school-logo {
+    flex: 0 0 180px;
+    display: flex;
+    align-items: stretch;
+}
 
 .school-logo img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
 }
 
-.school-logo img {
-    width: 100px;
-    height: auto;
-}
 .farmingdale {
-    flex: 1;
+    flex: 2;
 }
 
 .farmingdale h2 {
@@ -323,21 +324,48 @@ footer {
     font-size: 15px;
 }
 
+.degree-major {
+    font-weight: 600;
+}
+
+.graduation-date {
+    color: #AC4779 !important;
+    font-size: 14px;
+}
+
+.education-honors {
+    border-top: 1px solid #E8A9C3;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.education-honors h3 {
+    color: #AC4779;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
 .coursework {
     background-color: #F5C2D3;
     border-radius: 20px;
-    padding: 20px;
-    flex: 1;
+    padding: 15 px 20px;
+    flex: 1.5;
 }
 
 .coursework h2 {
     color: #AC4779;
     font-size: 20px;
+    text-align: center;
 }
 
 .coursework ul {
     color: #512D40;
     font-size: 15px;
+    margin-bottom: 0;
+}
+
+.coursework li {
+    margin-bottom: 5px;
 }
 
 /* Work Experience Section */
@@ -359,14 +387,14 @@ footer {
 .work-card {
     background-color: #F8D5E3;
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px;
 }
 
 .work-header {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .work-logo {
@@ -430,21 +458,21 @@ footer {
     padding-left: 20px;
 }
 
-
 .work-skills {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin-top: 20px;
 }
 
 .work-skills span {
-    background-color: #FFF8FA;
+    background-color: #F8D5E3;
     color: #AC4779;
     border-radius: 20px;
-    padding: 7px 14px;
+    padding: 8px 14px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Projects Page */
