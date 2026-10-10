@@ -1,12 +1,12 @@
 /*
     COLOR PALETTE
 
-    Main Pink:    #F7B8D1  - Main website background
-    Light Pink:   #FFF1F6  - Section backgrounds
-    Card Pink:    #F8D5E3  - Skills and project cards
-    Accent Pink:  #AC4779  - Buttons, links, and accents
-    Dark Plum:    #512D40  - Headings and body text
-    Soft White:   #FFF8FB  - Navigation bar and light cards
+   Main Pink: #F5C2D3
+   Light Background: #FFF8FA
+   Card Pink: #F8D5E3
+   Accent Pink: #AC4779
+   Dark Plum: #512D40
+   Soft White: #FFF8FB
 */
 
 :root {
@@ -14,12 +14,11 @@
 }
 
 body {
-    margin: 0;
     background-color: #F5C2D3;
     color: #AC4779;
     font-family: 'Poppins', sans-serif;
     padding: 10px 25px;
-    margin: auto;
+    margin: 0;
 }
 
 /* Header */
@@ -28,25 +27,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav {
-    background-color: #FFF8FB;
-    display: flex;
-    padding: 15px;
-    border-radius: 50px;
-    gap: 25px;
-    list-style: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: #512D40;
-}
-
-nav a.active {
-    color: #AC4779;
-    font-weight: bold;
 }
 
 header h1 {
@@ -62,6 +42,7 @@ header nav {
     padding: 15px;
     border-radius: 50px;
     gap: 25px;
+    list-style: none;
 }
 
 header nav a {
@@ -74,20 +55,17 @@ header nav a.active {
     font-weight: bold;
 }
 
-/* Main */
-
-/* intro section */
+/* Home Page */
 
 .intro {
-    background-color: #F5C2D3;
     margin-bottom: 20px;
 }
 
 .intro h4 {
     color: #AC4779;
+    font-size: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 15px;
 }
 
 .intro h1 {
@@ -123,9 +101,6 @@ header nav a.active {
     color:#AC4779;
 }
 
-
-/* Skills and tools */
-
 .skills-tools {
     background-color: #FFF8FB;
     padding: 5px;
@@ -147,7 +122,6 @@ header nav a.active {
 .skills-cat {
     position: absolute;
     width: 150px;
-
     top: -52px;
     right:50px;
 }
@@ -160,7 +134,7 @@ header nav a.active {
     align-items: center;
     background-color: #fed8e6;
     box-sizing: border-box;
-    flex: 1 1 calc(50% - 10px);
+    flex: 1 1 calc(50% - 10px); /* Cards resize with screen */
 }
 
 .skill-text h2 {
@@ -177,8 +151,6 @@ header nav a.active {
     height: 40px;
 }
 
-/* Footer */
-
 footer {
     text-align: center;
     padding: 5px;
@@ -192,7 +164,7 @@ footer {
     color:#FFF8FB;
 }
 
-/*Contact page*/
+/* Contact Page */
 
 .contact-main {
     text-align: center;
@@ -214,21 +186,19 @@ footer {
     margin: 0px;
     font-size: 40px;
 }
+
 .contact-container {
     background-color: #FFF8FA;
     border-radius: 30px;
     padding: 15px;
-
     max-width: 750px;
-    margin: 0 auto;
-
+    margin: auto;
     position: relative;
 }
 
 .contact-cat {
     position: absolute;
     width: 150px;
-
     top: -81px;
     right: 40px;
 }
@@ -281,7 +251,9 @@ footer {
     cursor: pointer;
 }
 
-/*Education Section*/
+/* Experience Page */
+
+/* Education Section */
 
 .experience-intro {
     text-align: center;
@@ -300,7 +272,6 @@ footer {
 .experience-cat {
     position: absolute;
     width: 150px;
-
     top: -82px;
     right: 40px;
     transform: rotate(3deg);
@@ -317,8 +288,9 @@ footer {
     gap: 25px;
     align-items: stretch;
 }
+
 .school-logo {
-    flex: 0 0 180px;
+    flex: 0 180px; /* Fixed width for school logo */
     display: flex;
     align-items: stretch;
 }
@@ -330,7 +302,7 @@ footer {
 }
 
 .farmingdale {
-    flex: 2;
+    flex: 2; /* Flex grow and fill available space */
 }
 
 .farmingdale h2 {
@@ -344,11 +316,11 @@ footer {
 }
 
 .degree-major {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .graduation-date {
-    color: #AC4779 !important;
+    color: #AC4779 !important; /* Override default color */
     font-size: 14px;
 }
 
@@ -361,14 +333,14 @@ footer {
 .education-honors h3 {
     color: #AC4779;
     font-size: 16px;
-    margin: 0 0 10px;
+    margin: 5; 
 }
 
 .coursework {
     background-color: #F5C2D3;
     border-radius: 20px;
-    padding: 15 px 20px;
-    flex: 1.5;
+    padding: 10px 20px;
+    flex: 1.5; 
 }
 
 .coursework h2 {
@@ -477,7 +449,6 @@ footer {
     padding-left: 20px;
 }
 
-
 .work-skills {
     display: flex;
     flex-wrap: wrap;
@@ -492,16 +463,16 @@ footer {
     border-radius: 20px;
     padding: 8px 14px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 /* Projects Page */
 
 .projects {
     margin: 20px auto;
-    max-width: 1100px;
     position: relative;
 }
+
 .projects-cat {
     position: absolute;
     width: 150px;
@@ -535,25 +506,18 @@ footer {
 #project-accordion .accordion-item {
     background-color: #FFF8FA;
     border: none;
-    border-bottom: 1px solid #E8A9C3;
+    border-top: 1px solid #E8A9C3;
     border-radius: 0;
     margin: 0;
 }
 
-#project-accordion .accordion-item:last-child {
-    border-bottom: none;
-}
-
-#project-accordion .accordion-button,
-#project-accordion .accordion-button:not(.collapsed) {
+#project-accordion .accordion-button {
     position: relative;
     display: flex;
     justify-content: center;
-
     background-color: #FFF8FA;
     color: #512D40;
     padding: 20px 25px;
-
     font-family: 'Poppins', sans-serif;
     box-shadow: none;
 }
@@ -563,8 +527,6 @@ footer {
     right: 20px;
 }
 
-
-
 #project-accordion .project-heading {
     text-align: center;
 }
@@ -572,14 +534,13 @@ footer {
 #project-accordion .project-heading h2 {
     color: #512D40;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
     margin: 0 0 5px;
 }
 
 #project-accordion .project-heading p {
     color: #AC4779;
     font-size: 14px;
-    font-weight: 400;
     margin: 0;
 }
 
@@ -587,10 +548,8 @@ footer {
     display: flex;
     gap: 30px;
     align-items: flex-start;
-
     background-color: #FFF8FA;
     padding: 25px;
-    text-align: left;
 }
 
 #project-accordion .accordion-left {
@@ -602,7 +561,6 @@ footer {
     display: block;
     width: 100%;
     height: auto;
-
     border: 1px solid #E8A9C3;
     border-radius: 12px;
 }
@@ -620,14 +578,10 @@ footer {
     margin-bottom: 12px;
 }
 
-#project-accordion .accordion-right > p:first-child {
-    margin-top: 0;
-}
-
 #project-accordion .accordion-right h3 {
     color: #AC4779;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
     margin: 15px 0 8px;
 }
 
@@ -654,7 +608,7 @@ footer {
 
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
 
     padding: 10px 18px;
     border-radius: 50px;
@@ -662,20 +616,4 @@ footer {
 
 #project-accordion .accordion-right a:hover {
     background-color: #512D40;
-}
-
-
-@media (max-width: 768px) {
-    #project-accordion .accordion-body {
-        flex-direction: column;
-    }
-
-    #project-accordion .accordion-left,
-    #project-accordion .accordion-right {
-        width: 100%;
-    }
-
-    #project-accordion .project-heading h2 {
-        font-size: 17px;
-    }
 }
