@@ -104,6 +104,7 @@ header nav a.active {
 .skills-tools {
     background-color: #FFF8FB;
     padding: 5px;
+    border-radius: 50px;
 }
 
 .skills-tools h1 {
@@ -191,7 +192,7 @@ footer {
     background-color: #FFF8FA;
     border-radius: 30px;
     padding: 15px;
-    max-width: 750px;
+    max-width: 900px;
     margin: auto;
     position: relative;
 }
