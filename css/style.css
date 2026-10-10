@@ -473,6 +473,10 @@ footer {
     position: relative;
 }
 
+.projects-body {
+    background-color: #F5C2D3;
+}
+
 .projects-cat {
     position: absolute;
     width: 150px;
