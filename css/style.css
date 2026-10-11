@@ -691,6 +691,10 @@ footer {
         right: 25px;
     }
 
+    .accordion-body {
+        flex-direction: column;
+    }
+
     /* Contact page */
 
     .contact-cat {
