@@ -622,3 +622,30 @@ footer {
 #project-accordion .accordion-right a:hover {
     background-color: #512D40;
 }
+
+
+/* Mobile Layout */
+
+/* Header */
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 5px;
+        padding: 12px 8px;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+}
