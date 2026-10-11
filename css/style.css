@@ -626,9 +626,10 @@ footer {
 
 /* Mobile Layout */
 
-/* Header */
-
 @media (max-width: 480px) {
+
+    /* Header */
+
     header {
         flex-direction: column;
         gap: 25px;
@@ -648,4 +649,53 @@ footer {
     header nav a {
         font-size: 13px;
     }
+
+    /* Home page */
+
+    .skills-cat {
+        width: 80px;
+        top: -18px;
+        right: 25px;
+    }
+    .skills-tools h1{
+        text-align: center;
+    }
+
+    /* Experience page */
+
+    .education-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-cat {
+        width: 80px;
+        top: -43px;
+        right: 25px;
+    }
+
+    .school-logo {
+        width: 200px;
+        margin: auto;
+    }
+
+    /* Projects page */
+
+    .accordion {
+        margin-top: 35px;
+    }
+
+    .projects-cat {
+        width: 80px;
+        top: 37px;
+        right: 25px;
+    }
+
+    /* Contact page */
+
+    .contact-cat {
+        width: 80px;
+        top: -43px;
+    }
+
 }
